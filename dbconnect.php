@@ -15,4 +15,4 @@ try {
     echo "Ошибка подключения к БД: " . $e->getMessage(), $e->getCode();
     die();
 }
-echo "Подключение к базе ". $_ENV['dbname']." выполнено!";
+
