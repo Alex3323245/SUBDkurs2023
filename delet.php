@@ -14,7 +14,7 @@ try {
     header("location:index.php?page=1");
 
 } catch (PDOexception $error) {
-    $_SESSION['message']="Фильм не может быть удален, так как связан с элементами других таблиц";
+    $_SESSION['message']="Товар не может быть удален";
     }
 exit();
 ?>
