@@ -1,8 +1,4 @@
 <?php
-    session_start();
-
-    include "dbconnect.php";
-
     $login = $_POST['login'];
     $password = md5($_POST['password']);
 

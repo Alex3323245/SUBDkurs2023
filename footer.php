@@ -4,5 +4,4 @@
     var myModal = new bootstrap.Modal(document.getElementById('messageModal'), {})
     myModal.show()
 </script>
-
 </html>

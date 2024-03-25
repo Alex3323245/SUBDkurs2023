@@ -5,7 +5,8 @@
     require "footer.php";
     require "signin.php";
     
-    switch ($_GET['page']) {
+    switch ($_GET['page'])
+    {
         case '1':
             require "cat.php";
             break;
@@ -63,5 +64,5 @@
 
         </body>
     </html>
-    </div>
+</div>
 
