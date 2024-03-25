@@ -13,10 +13,8 @@ if(isset($_POST['submit'])&&!empty($_POST['submit'])){
                 $_SESSION['message'] = 'Товар добавлен';
         header("location:index.php?page=1");
             }
-
 }
 ?>
-
 <!DOCTYPE html>
 
 <html lang="en">

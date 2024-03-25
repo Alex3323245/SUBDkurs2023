@@ -4,9 +4,7 @@
     require "menu.php";
     require "footer.php";
     require "signin.php";
-
-
-
+    
     switch ($_GET['page']) {
         case '1':
             require "cat.php";
@@ -19,10 +17,10 @@
             header("location:index.php");
             break;
     }
-    echo '</main>';
+
 ?>
 
-<div class="">
+<div>
     <!doctype html>
     <html lang="en">
         <head>
@@ -30,19 +28,17 @@
             <title>Авторизация</title>
             <link rel="stylesheet" href="assets/css/main.css">
         </head>
-        <style>body {
-                background: center  url("https://www.made-in-china.es/archivos/slides/made-in-china3.jpg");
-            }
-        </style>
+
+        <style >body {background: center  url("https://www.made-in-china.es/archivos/slides/made-in-china3.jpg");}</style>
+
         <body>
 
         <?php
         if($_SESSION['login'] != '1' && !isset($_GET['page'])) {
-
         ?>
 
             <!--форма авторизации -->
-            <form action="" method="post" style="opacity: 0.8;background: #e3d8d8;padding: 10px;">
+            <form  method="post" style="opacity: 0.8;background: #e3d8d8;padding: 10px;">
                 <label>Логин</label>
                 <input type="text" name="login" placeholder="Введите свой логин">
                 <label>Пароль</label>
@@ -51,20 +47,22 @@
                 <p>
                     У вас нет аккаунта?  <a href="/registr.php">зарегистрироваться</a>
                 </p>
+
         <?php
-        if($_SESSION['message']){
-            echo '<p class="msg"> '. $_SESSION['message'] .' </p>';
-            }
+        if($_SESSION['message']){echo '<p class="msg"> '. $_SESSION['message'] .' </p>';}
         unset($_SESSION['message'])
         ?>
+
             </form>
 
-        <?
+        <?php
         }else{
             echo '<h1> '. $_SESSION['message'] .' </h1>';
         }
         unset($_SESSION['message'])
         ?>
+
         </body>
     </html>
+    </div>
 
