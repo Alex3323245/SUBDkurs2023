@@ -17,7 +17,6 @@
             header("location:index.php");
             break;
     }
-
 ?>
 
 <div>

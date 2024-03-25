@@ -1,5 +1,4 @@
 <?php
-
     echo '<main class="container" style="margin-top: 100px">';
 
     if ($_SESSION["login"] == 0)

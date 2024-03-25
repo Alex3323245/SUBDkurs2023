@@ -14,7 +14,8 @@ try {
     header("location:index.php?page=1");
 
 } catch (PDOexception $error) {
-    $_SESSION['message']="Товар не может быть удален";
+    header("location:index.php?page=1");
+    $_SESSION['message']="Товар не может быть удален, он связан с таблицей";
     }
 exit();
 ?>

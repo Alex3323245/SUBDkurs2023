@@ -1,11 +1,8 @@
 <?php
-
-echo '<main class="container" style="margin-top: 100px">';
-
-if ($_SESSION["login"] == 0)
-{
-header("location:index.php");
-}else{
+    echo '<main class="container" style="margin-top: 100px">';
+    if ($_SESSION["login"] == 0) {
+        header("location:index.php");
+    }else{
 
 echo '<div style="text-align: center; font-size: 50px; opacity: 0.8;background: #e3d8d8;padding: 9px; ">Категории  товара</div>';
 $result = $conn->query("SELECT * FROM public.категория_товара");
